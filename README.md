@@ -111,7 +111,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Reflect Highest Score | H | 1hr | 0hrs | 0hrs |
 | Compare and Update Highest Score | H | 1hr | 0hrs | 0hrs |
 | Highest Score Button creation |  H | 1hr | 0hrs | 0hrs |
-
 | Total | H | 39hrs| 1.5hrs | 1.5hrs |
 
 ## Code Snippet
