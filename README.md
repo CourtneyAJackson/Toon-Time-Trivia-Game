@@ -3,7 +3,8 @@
 # Project Overview
 
 ##Project Name
-My "Quotation" Device
+Toon Time!
+"The worlds most whackiest cartoon trivia game!"
 
 The name of your project with deployed URL.
 
