@@ -1,0 +1,16 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px
+}
+
+#header-background {
+  background-image: url(https://www.pyramidinternational.com//assets/uploaded/brands/2016/08/22/192879891832293.jpg);  
+  height: 300px;
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+
+#Toon-Time-header{
+  text-align: center;
+  font-weight: 400;
+} 
