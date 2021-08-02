@@ -3,6 +3,8 @@
 # Project Overview
 
 ##Project Name
+
+
 Toon Time!
 "The worlds most whackiest cartoon trivia game!"
 
@@ -10,7 +12,7 @@ The name of your project with deployed URL.
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Toon Time is a cartoon enthuists dream! It tests your cartoon knowledge over the corse of 10 multiple choice questions. Each question you get correct, you earn a point! Can you beat the highest score to date?
 
 ## API and Data Sample
 
