@@ -1,8 +1,8 @@
-`# Toon-Time
+# Toon-Time
 
 # Project Overview
 
-##Project Name
+## Project Name
 
 
 Toon Time!
@@ -21,7 +21,7 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 
 Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&type=multiple&encode=url3986
 
-
+```javascript
   "response_code": 0,
   "results": [
     {
@@ -36,10 +36,11 @@ Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&ty
         "Rex"
       ]
     },
+```
 ## Wireframes
 
 
-https://whimsical.com/toon-time-trivia-game-6McUEGduAAU1mRV1dawXT3
+![wireframe](https://whimsical.com/toon-time-trivia-game-6McUEGduAAU1mRV1dawXT3)
 
 
 
