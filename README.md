@@ -1,4 +1,4 @@
-# Toon-Time
+`# Toon-Time
 
 # Project Overview
 
@@ -17,9 +17,28 @@ Use this section to describe your final project and perhaps any links to relevan
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
 
+Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&type=multiple&encode=url3986
+
+
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment%3A%20Cartoon%20%26%20Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which%20%22Toy%20Story%22%20character%20was%20voiced%20by%20Don%20Rickles%3F",
+      "correct_answer": "Mr.%20Potato%20Head",
+      "incorrect_answers": [
+        "Slinky%20Dog",
+        "Hamm",
+        "Rex"
+      ]
+    },
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+
+
 
 ### MVP/PostMVP
 
@@ -28,15 +47,23 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Creating functional new game button 
+- Implement function trivia questions questions that link to the correct answer
+- Incrementing the players score with every correct answer 
+- Implementing functional multiple choice possibilities for answers
+- Creating highest score button  that keeps track of the most recent highest score
+- Reflect highest score on the page
+- Keep track of players score and reflect it on the page
+- Compare players score to highest score at end of game to see if highest score needs to be updated
+- Reset every time new game button is clicked
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add user sign up functionality 
+- let users have the ablitlity to create a simple profile to keep track of their gaming history and communicate with other players
+- make it a two player game 
+- have usuers be able to submit questions to be possibly added to the game
 
 ## Project Schedule
 
@@ -46,7 +73,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
 |August 3| Pseudocode / actual code | Incomplete
 |August 4| Initial Clickable Model  | Incomplete
@@ -81,3 +108,4 @@ function reverse(string) {
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
+`
