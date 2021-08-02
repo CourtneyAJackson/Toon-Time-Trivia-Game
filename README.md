@@ -36,13 +36,10 @@ Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&ty
     },
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+
+https://whimsical.com/toon-time-trivia-game-6McUEGduAAU1mRV1dawXT3
 
 
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
@@ -82,7 +79,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://whimsical.com/priority-matrix-trivia-game-P9LU55eNcG3dcBfB1BkJDm
+
 
 ## Timeframes
 
@@ -92,9 +90,26 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Reasearching Api for Topic | H | 2hr | 1.5hrs | 1.5hrs |
+| Adding Form | H | 3hrs| 0hrs | 0hrs |
+| Working with API | H | 3hrs| 0hrs | 0hrs |
+| Pseudocoding | H | 4hr | 0hrs | 0hrs |
+| Flexbox Implementation | H | 4hr | 0hrs | 0hrs |
+| JS Implementation | H | 4hr | 0hrs | 0hrs |
+| Linking correct input to output | H | 2hr | 0hrs | 0hrs |
+| Implementing Random Questions and Answers | H | 3hr | 0hrs | 0hrs |
+| Basic Css | H | 3hr | 0hrs | 0hrs |
+| HTML Implementation | H | 2hr | 0hrs | 0hrs |
+| Implementing Reset New Game | H | 2hr | 0hrs | 0hrs |
+| Start Button Creation & Functionality | H | 1hr | 0hrs | 0hrs |
+| Keep Track of Players Score |  H | 1hr | 0hrs | 0hrs |
+| Reflect Players Score | H | 1hr | 0hrs | 0hrs |
+| Keep track of Highest Score | H | 1hr | 0hrs | 0hrs |
+| Reflect Highest Score | H | 1hr | 0hrs | 0hrs |
+| Compare and Update Highest Score | H | 1hr | 0hrs | 0hrs |
+| Highest Score Button creation |  H | 1hr | 0hrs | 0hrs |
+
+| Total | H | 39hrs| 1.5hrs | 1.5hrs |
 
 ## Code Snippet
 
