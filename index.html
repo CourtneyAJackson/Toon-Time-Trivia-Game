@@ -16,20 +16,28 @@
 
     </div>
   </header>
-  <section class="intro-to-new-game"> 
+  <section class="intro-to-new-game">
     <div class="pow-backgroung-img"></div>
-      <h1 id="toon-time-header">Toon Time</h1>   
+    <h1 id="toon-time-header">Toon Time</h1>
     </div>
-    <div class= "new-game-subtitles">
-    <h2 id="whacky-trivia-game"><span>The worlds most whackiest cartoon trivia game!</span></h2>
-    <h3 id="think-you-know">How well do you THINK you know your cartoons?</h3>
-    <h4 id="find-out">Click the New Game button below to find out!</h4>
+    <div class="new-game-subtitles">
+      <h2 id="whacky-trivia-game"><span>The worlds most whackiest cartoon trivia game!</span></h2>
+      <h3 id="think-you-know">How well do you THINK you know your cartoons?</h3>
+      <h4 id="find-out">Click the New Game button below to find out!</h4>
     </div>
     <div class="new-game-pics">
       <img class="new-game-1" src="https://static2.therichestimages.com/wordpress/wp-content/uploads/featured-image.png"
         alt="cartoon characters">
-      <button class="new-game-button">New Game</button>
-      <button class="highest-score">Highest Score</button>
+      <div class="buttons">
+        <button class="new-game-button">New Game</button>
+        <script>
+          document.querySelector(".new-game-button")
+            .addEventListener("click", () => {
+              window.location.href ="file:///Users/courtneyjackson/general_assembly/sei/chicladee/unit_1/week_3/Toon-Time-Game_P1/Toon-Time-Trivia-Game/index2.html"
+            })
+        </script>
+        <button class="highest-score">Highest Score</button>
+      </div>
     </div>
     </div>
   </section>

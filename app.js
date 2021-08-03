@@ -3,8 +3,11 @@ const DOMAIN = 'https://opentdb.com/api.php?amount=10&category=32&difficulty=med
 // const API_KEY = '61af40b2'
 // const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&s=`;
 
-console.log(DOMAIN)
 
-const fetchedTrivia = async () => {
+
   
-}
+document.addEventListener("click", (event) => {
+  alert("hello")
+})
+
+
