@@ -11,15 +11,6 @@ body {
   margin-bottom: 150px;
 }
 
-
-#Toon-Time-header{
-  
-} 
-
-#whacky-trivia-game{
-  
-}
-
 .toon-time-main{
   flex-shrink: initial;
   text-align: center;
@@ -30,14 +21,14 @@ body {
   width: 0 auto;
   /* justify-content: center; */
   
-} 
-
+}
 
 .intro-to-new-game{
   font-size: 20px;
   text-align: center;
   height: 0 auto;
   width: 0 auto;
+  justify-content: center;
 
 }
 
@@ -48,7 +39,7 @@ body {
 }
 
 .new-game-button {
-  background-color: yellow;
+  background-color: gold;
   border: none;
   color: black;
   padding: 20px;
@@ -60,7 +51,7 @@ body {
 }
 
 .highest-score {
-    background-color: lightgreen;
+    background-color: skyblue;
     border: none;
     color: black;
     padding: 20px;
@@ -74,20 +65,33 @@ body {
 .new-game-pics {
   text-align: center;
   padding: 20px;
-
+  justify-content: center;
   border-radius: 6px;
   width: 60%;
   margin: 50px auto;
-  background-color: lightskyblue;
+  margin-left: 250px;
+  margin-right: 250px;
+  background-color: brown;
   display: inline-block;
-
-
 }
 
-.pow-background {
+#toon-time-header {
+  
   background-image: url("https://media.gettyimages.com/photos/explosion-blank-pop-art-speech-bubble-isolated-on-white-picture-id841438710?b=1&k=6&m=841438710&s=170667a&w=0&h=m1tjDBv3SJZCR-wI4n18Boham-lafeCy0jRSMrdSa-Y=");
-
-  /* height: 700px;
-  padding-top: 100px;
-  margin-bottom: 0 auto; */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  padding-top: 0;
+  margin-bottom:  0px;
+  text-align: center; 
+  font-display: cente;
+  font-size: 150px;
+  justify-content: space-around;
+  
 }
+
+.new-game-subtitles{
+  text-align: center;
+  font-size: 30px;
+}
+
