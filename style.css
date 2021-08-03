@@ -1,16 +1,93 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   margin: 0px
 }
 
 #header-background {
+  flex-flow: wrap;
   background-image: url(https://www.pyramidinternational.com//assets/uploaded/brands/2016/08/22/192879891832293.jpg);  
-  height: 300px;
+  height: 200px;
   padding-top: 100px;
   margin-bottom: 150px;
 }
 
+
 #Toon-Time-header{
-  text-align: center;
-  font-weight: 400;
+  
 } 
+
+#whacky-trivia-game{
+  
+}
+
+.toon-time-main{
+  flex-shrink: initial;
+  text-align: center;
+  background-color: white;
+ 
+  
+  height: 0 auto;
+  width: 0 auto;
+  /* justify-content: center; */
+  
+} 
+
+
+.intro-to-new-game{
+  font-size: 20px;
+  text-align: center;
+  height: 0 auto;
+  width: 0 auto;
+
+}
+
+.new-game-1 {
+  flex-shrink: ;
+  height: 0 auto;
+  width: 300px;
+}
+
+.new-game-button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 50px;
+}
+
+.highest-score {
+    background-color: lightgreen;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 50px;
+}
+
+.new-game-pics {
+  text-align: center;
+  padding: 20px;
+
+  border-radius: 6px;
+  width: 60%;
+  margin: 50px auto;
+  background-color: lightskyblue;
+  display: inline-block;
+
+
+}
+
+.pow-background {
+  background-image: url("https://media.gettyimages.com/photos/explosion-blank-pop-art-speech-bubble-isolated-on-white-picture-id841438710?b=1&k=6&m=841438710&s=170667a&w=0&h=m1tjDBv3SJZCR-wI4n18Boham-lafeCy0jRSMrdSa-Y=");
+
+  /* height: 700px;
+  padding-top: 100px;
+  margin-bottom: 0 auto; */
+}
