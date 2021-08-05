@@ -5,23 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
- <script src="app2.js" defer></script>
  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="app2.js" defer></script>
   <title>Trivia Questions Page</title>
 </head>
 <body>
-  <div class="question-section">
+  <div class=players-score>
+    <p class="score">
+      Score:
+    </p>
+  </div>
+    <h1 id="score">0</h1>
+  <div class="mc-background-image"></div>
+    <div class="question-section">
     <div class="mc-holder" class="hide">
       <div id= "mc-questions">Questions</div>
-      <dic id="mc-answers" class="answer-buttons">
-        <button class= "button">Choice1</button>
-        <button class="button">Choice2</button>
-        <button class="button">Choice3</button>
-      </dic>
+      <div id="mc-answers" class="answer-buttons">
+        <button  class= "button" id="choice1">Choice1</button>
+        <button class="button" id="choice2">Choice2</button>
+        <button  class="button" id="choice3">Choice3</button> 
+        <button class="button" id="choice4">Choice4</button>
+      </div>
     </div>
-    <div class="buttons">
-      <button id="next" class="next-click hide" >Next</button>
-      <button id="previous" class="previous-click">Previous</button>
+    <divclass =></div>
+    <!-- <div class="buttons"> -->
+      <!-- <button id="next" class="next-click">Next</button>
+      <button id="previous" class="previous-click">Previous</button> -->
     </div>
   </div>
 </body>

@@ -3,6 +3,7 @@ body {
   margin: 0px
 }
 
+
 #header-background {
   flex-flow: wrap;
   background-image: url(https://www.pyramidinternational.com//assets/uploaded/brands/2016/08/22/192879891832293.jpg);  
@@ -61,6 +62,15 @@ body {
     font-size: 16px;
     margin: 10px 50px;
 }
+.highest-score:hover{
+  cursor: pointer;
+  box-shadow:0 0.4rem 1.4rem 0 white;
+}
+
+.new-game-button:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 white;
+}
 
 .new-game-pics {
   text-align: center;
@@ -71,13 +81,13 @@ body {
   margin: 50px auto;
   margin-left: 250px;
   margin-right: 250px;
-  background-color: brown;
+  background-color: rgb(0, 120, 118);
   display: inline-block;
 }
 
 #toon-time-header {
   
-  background-image: url("https://media.gettyimages.com/photos/explosion-blank-pop-art-speech-bubble-isolated-on-white-picture-id841438710?b=1&k=6&m=841438710&s=170667a&w=0&h=m1tjDBv3SJZCR-wI4n18Boham-lafeCy0jRSMrdSa-Y=");
+  /* background-image: url("https://media.gettyimages.com/photos/explosion-blank-pop-art-speech-bubble-isolated-on-white-picture-id841438710?b=1&k=6&m=841438710&s=170667a&w=0&h=m1tjDBv3SJZCR-wI4n18Boham-lafeCy0jRSMrdSa-Y="); */
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
@@ -85,8 +95,9 @@ body {
   margin-bottom:  0px;
   text-align: center; 
   font-display: cente;
-  font-size: 150px;
+  font-size: 200px;
   justify-content: space-around;
+  color: yellow;
   
 }
 
@@ -95,3 +106,66 @@ body {
   font-size: 30px;
 }
 
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* HTML CSSResult Skip Results Iframe
+EDIT ON */
+.rainbow-letters {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.rainbow-letters span:nth-child(10n + 1) {
+  color: #ef5350;
+}
+
+.rainbow-letters span:nth-child(10n + 2) {
+  color: #ab47bc;
+}
+
+.rainbow-letters span:nth-child(10n + 3){
+  color: #651fff;
+}
+
+.rainbow-letters span:nth-child(10n + 5){
+  color: #3949ab;
+}
+
+.rainbow-letters span:nth-child(10n + 4) {
+  color: #2196f3;
+}
+
+.rainbow-letters span:nth-child(10n + 6){
+  color: #00bcd4;
+}
+
+.rainbow-letters span:nth-child(10n + 7){
+  color: #4caf50;
+}
+
+.rainbow-letters span:nth-child(10n + 8){
+  color: #ffc107;
+}
