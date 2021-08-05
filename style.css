@@ -1,6 +1,14 @@
-body {
+  body {
   /* font-family: 'Courier New', Courier, monospace; */
-  margin: 0px
+  margin: 0px;
+  font-size: 40px;
+  font-family: sans-serif;
+  @media (max-width:770px) and (min-width:480px) {
+    font-size: 20px;
+    display: inline-block;
+ }  
+
+  
 }
 
 
@@ -16,12 +24,8 @@ body {
   flex-shrink: initial;
   text-align: center;
   background-color: white;
- 
-  
   height: 0 auto;
   width: 0 auto;
-  /* justify-content: center; */
-  
 }
 
 .intro-to-new-game{
@@ -33,12 +37,33 @@ body {
 
 }
 
+#toon-time-header {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  padding-top: 0;
+  margin-bottom:  0px;
+  text-align: center; 
+  font-display: cente;
+  font-size: 200px;
+  justify-content: space-around;
+  color: yellow;
+  font-family: 'Schoolbell', cursive;
+  
+}
 .new-game-1 {
-  flex-shrink: ;
+  /* flex-shrink: ; */
   height: 0 auto;
   width: 300px;
 }
-
+.new-game-subtitles{
+  text-align: center;
+  font-size: 30px;
+  @media screen and (max-width:700px) and (min-width:450px) {
+    font-size: 5px;
+    display: flex;
+  }
+}
 .new-game-button {
   background-color: gold;
   border: none;
@@ -49,6 +74,7 @@ body {
   display: inline-block;
   font-size: 16px;
   margin: 10px 50px;
+  border: solid 3px black;
 }
 
 .highest-score {
@@ -61,6 +87,7 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 10px 50px;
+    border: solid 3px black;
 }
 .highest-score:hover{
   cursor: pointer;
@@ -83,28 +110,10 @@ body {
   margin-right: 250px;
   background-color: rgb(0, 120, 118);
   display: inline-block;
+  border: solid 6px yellow;
 }
 
-#toon-time-header {
-  
-  /* background-image: url("https://media.gettyimages.com/photos/explosion-blank-pop-art-speech-bubble-isolated-on-white-picture-id841438710?b=1&k=6&m=841438710&s=170667a&w=0&h=m1tjDBv3SJZCR-wI4n18Boham-lafeCy0jRSMrdSa-Y="); */
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
-  padding-top: 0;
-  margin-bottom:  0px;
-  text-align: center; 
-  font-display: cente;
-  font-size: 200px;
-  justify-content: space-around;
-  color: yellow;
-  
-}
 
-.new-game-subtitles{
-  text-align: center;
-  font-size: 30px;
-}
 
 html, body {
   width: 100%;
@@ -133,9 +142,13 @@ body {
 /* HTML CSSResult Skip Results Iframe
 EDIT ON */
 .rainbow-letters {
+  display: flex;
   font-size: 40px;
   font-family: sans-serif;
   text-transform: uppercase;
+  justify-items: center;
+  align-items: center;
+  
 }
 
 .rainbow-letters span:nth-child(10n + 1) {
@@ -169,3 +182,29 @@ EDIT ON */
 .rainbow-letters span:nth-child(10n + 8){
   color: #ffc107;
 }
+
+
+/*FlexBox*/
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+#header-background {
+  display: flex;
+  width: 100%;
+}
+
+header,footer {
+  flex-basis: 100px;
+}
+
+.right {
+  order: 2;
+} */
