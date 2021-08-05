@@ -5,12 +5,19 @@ const DOMAIN = 'https://opentdb.com/api.php?amount=10&category=32&difficulty=med
 
 
 
-  
-document.addEventListener("click", (event) => {
+const newGame = document.getElementsByClassName("new-game-button")
+newGame.addEventListener("click", (event) => {
   alert("Good Luck!")
+  //window.location.assign("./index2.html")
 })
 
 
+const highScore = document.getElementsByClassName("highest-score")
+
+highScore.addEventListener("click", event => {
+const score = localStorage.getItem('mostRecentScore')
+  alert(score)
+})
 // questions = dataQuestions.map(dataQuestion => {
       
 //   const formattedQuestion = {

@@ -9,7 +9,7 @@ const DOMAIN = "https://opentdb.com/api.php?amount=10&category=32&difficulty=med
 
 //console.log(mcAnswers)
 //const mcQuestion = document.getElementById("mc-questions")
-let newArray = []
+//const newArray = []
 // let currQuestion = {};
 // //let acceptingAswers = false;
 //let score = 0;
@@ -17,18 +17,22 @@ let newArray = []
 // let questions = []
 //const currentQuestionIndex
 const getData = async () => {
+  
   try {
+    const dataArr = []
     const data = await axios.get(DOMAIN)
     const dataInfo = data.data.results
-    //console.log(dataInfo)
+    console.log(dataInfo)
     //console.log(dataInfo)
     //eachQuestion = () => {
-    dataInfo.forEach(data => {
-      //console.log(data.question)
+     //console.log(data.question)
       //let questions =
+    dataInfo.forEach((data => {
+        console.log(data)
+      }))
         //localStorage.setItem("dataInfo", "question") 
       //console.log(questions)
-      newArray.push(data.question)
+      //dataArr.push(data.question)
       //console.log(newArray.length)
       //const availableQuestions = [questions]
       //console.log(availableQuestions)
@@ -39,10 +43,10 @@ const getData = async () => {
 
 
 
-    })
+   
     //console.log(questions)
     applyDataRetrieved(dataInfo)
-
+    //return formattedQuestion
     // newGame(questions)
 
 
@@ -50,13 +54,14 @@ const getData = async () => {
     console.log(error)
   }
 }
-
+//newGame()
 getData()
-//console.log(newArray)
+//console.log(dataArr)
+
 // const dataInfo = localStorage.getItem("dataInfo.question")
 // console.log(dataInfo)
 
-console.log(newArray.length)
+
 //console.log(newArray)
 //console.log(dataArray)
 let scoreContainer = document.querySelector(".players-score")
@@ -65,23 +70,24 @@ let correctAnswer = document.getElementById("choice4")
 newGame = () => {
   let currentQuestionCount = 0
   let score = 0
-  let clickCount = 11
+  //let clickCount = 11
   //console.log(newArray)
-
-
+  
 
   let currentScore = document.querySelector(".score")
 
   scoreContainer.append(currentScore)
 
   const mcChoices = Array.from(document.querySelectorAll(".button"))
-  console.log(mcChoices)
+  //console.log(mcChoices)
 
-
+  //console.log(dataInfo)
 
   mcChoices.forEach(mcChoice => {
 
     mcChoice.addEventListener("click", event => {
+      
+
       if (score === 10) {
         alert("Coongratulations you won!")
         window.location.assign("./index.html")
@@ -90,40 +96,41 @@ newGame = () => {
           alert("Sorry. Game Over")
           window.location.assign("./index.html")
         } else
-        if (mcChoice === correctAnswer) {
-          numOfQuestions = numOfQuestions - 1
-          score++
-          
-          //window.location.reload()
-          currentScore.innerHTML = `Score: ${score}`
-          alert(`Correct! ${numOfQuestions} questions to go!`)
-          //window.location.reload()
-          currentQuestionCount++
-          
-        } else
-          if (mcChoice !== correctAnswer) {
+          if (mcChoice === correctAnswer) {
             numOfQuestions = numOfQuestions - 1
-            alert(`Uh Oh, wrong answer! Only ${numOfQuestions} questions remaining`)
+            score++
+          
+            //window.location.reload()
+            currentScore.innerHTML = `Score: ${score}`
+            alert(`Correct! ${numOfQuestions} questions to go!`)
+            //window.location.reload()
             currentQuestionCount++
-            clickCount++
-          }
-
+           //applyDataRetrieved(dataInfo)
+          } else
+            if (mcChoice !== correctAnswer) {
+              numOfQuestions = numOfQuestions - 1
+              alert(`Uh Oh, wrong answer! Only ${numOfQuestions} questions remaining`)
+              currentQuestionCount++
+              //clickCount++
+              //
+            }
+           //applyDataRetrieved(dataInfo)
       //setNextQuestion()
       // if (score >= 10) {
       //   alert("Congratulations!!! You Win!")
       // } else {
       //   ("Maybe next time")
       //} // }
-
+     
 
     })
 
   })
 
-
-
-  //return score
+  return score
+  
 }
+  
 newGame()
 
 // const mcAnswers = document.querySelectorAll(".button")
@@ -154,25 +161,30 @@ let currentQuestionIndex = 0
 
 
 
-getNextQuestion = () => {
-  if (numOfQuestions.length === 0 || numOfQuestions === 10) {
+saveHighScore = () => {
+  if (numOfQuestions.length === 0) {
+    
     localStorage.setItem("mostRecentScore", score)
-
-
-    //return window.location.assign("/.index.html")
   }
-  numOfQuestions--
-
-  currentQuestionIndex = Math.floor(Math.random() * numOfQuestions.length)
-  currentQuestion = numOfQuestions[currentQuestionIndex]
 }
-getNextQuestion()
+saveHighScore()
 //console.log(numOfQuestions)
 
 // shuffledQuestions = questions.sort(() => Math.floor(Math.random() * 3))
 // currentQuestionIdx = 0
+//const newArray = []
 
 function applyDataRetrieved(dataInfo) {
+
+//console.log(dataInfo)
+  for (let i = 0; i < dataInfo.length; i++){
+
+   console.log(dataInfo[i].question)
+   
+  }
+
+
+  
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[0].question}`
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[1].question}`
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[2].question}`
@@ -183,6 +195,7 @@ function applyDataRetrieved(dataInfo) {
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[7].question}`
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[8].question}`
   document.querySelector("#mc-questions").innerHTML = `${dataInfo[9].question}`
+  
 
 
   document.querySelector("#choice1").innerHTML = `${dataInfo[0].incorrect_answers[0]}`
@@ -234,6 +247,8 @@ function applyDataRetrieved(dataInfo) {
   document.querySelector("#choice2").innerHTML = `${dataInfo[9].incorrect_answers[1]}`
   document.querySelector("#choice3").innerHTML = `${dataInfo[9].incorrect_answers[2]}`
   document.querySelector("#choice4").innerHTML = `${dataInfo[9].correct_answer}`
+
+
 
 }
 applyDataRetrieved()
