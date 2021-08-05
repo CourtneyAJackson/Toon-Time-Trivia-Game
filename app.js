@@ -15,15 +15,16 @@ newGame.addEventListener("click", (event) => {
 const highScore = document.getElementsByClassName("highest-score")
 
 highScore.addEventListener("click", event => {
-const score = localStorage.getItem('mostRecentScore')
+const score = localStorage.getItem('currentScore')
   alert(score)
+  //console.log(score)
 })
 // questions = dataQuestions.map(dataQuestion => {
       
 //   const formattedQuestion = {
 //     question: dataQuestion.question
 //   }
-//     //console.log(formattedQuestion)
+//     //console.log(foromattedQuestion)
 
 //     const answers = [...dataQuestion.incorrect_answers]
 //     formattedQuestion.answer = Math.floor(Math.random() * 3) + 1
