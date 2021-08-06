@@ -4,13 +4,12 @@
   margin: 0px;
   font-size: 40px;
   font-family: sans-serif;
-  flex-direction: column;
+  
   @media screen and (max-width:1025px) {
-    
+    flex-direction: column;
     font-size: 20px;
     display: inline-block;
  }  
- /* and (min-width:480px)  */
   
 }
 
@@ -62,12 +61,11 @@
   width: 300px;
 }
 .new-game-subtitles{
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 30px;
-  @media screen and (max-width:700px) and (min-width:450px) {
-    font-size: 5px;
-    display: flex;
-  }
+ 
 }
 .new-game-button {
   background-color: gold;
@@ -105,6 +103,9 @@
 }
 
 .new-game-pics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
   padding: 20px;
   justify-content: center;
