@@ -94,35 +94,44 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Reasearching Api for Topic | H | 2hr | 1.5hrs | 1.5hrs |
-| Adding Form | H | 3hrs| 0hrs | 0hrs |
-| Working with API | H | 3hrs| 0hrs | 0hrs |
-| Pseudocoding | H | 4hr | 0hrs | 0hrs |
-| Flexbox Implementation | H | 4hr | 0hrs | 0hrs |
-| JS Implementation | H | 4hr | 0hrs | 0hrs |
-| Linking correct input to output | H | 2hr | 0hrs | 0hrs |
-| Implementing Random Questions and Answers | H | 3hr | 0hrs | 0hrs |
-| Basic Css | H | 3hr | 0hrs | 0hrs |
-| HTML Implementation | H | 2hr | 0hrs | 0hrs |
-| Implementing Reset New Game | H | 2hr | 0hrs | 0hrs |
-| Start Button Creation & Functionality | H | 1hr | 0hrs | 0hrs |
-| Keep Track of Players Score |  H | 1hr | 0hrs | 0hrs |
-| Reflect Players Score | H | 1hr | 0hrs | 0hrs |
-| Keep track of Highest Score | H | 1hr | 0hrs | 0hrs |
+| Adding Form | H | 3hrs| 2hrs | 2hrs |
+| Working with API | H | 3hrs| 6hrs | 6hrs |
+| Pseudocoding | H | 4hr | 3hrs | 3hrs |
+| Flexbox Implementation | H | 4hr | 3.5hrs | 3.5hrs |
+| JS Implementation | H | 4hr | 8hrs | 8hrs |
+| Linking correct input to output | H | 2hr | 4hrs | 4hrs |
+| Implementing Random Questions and Answers | H | 3hr | 4hrs | 4hrs |
+| Basic Css | H | 3hr | 3hrs | 3hrs |
+| HTML Implementation | H | 2hr | 1.5hrs | 1.5hrs |
+| Implementing Reset New Game | H | 2hr | .5hrs | .5hrs |
+| Start Button Creation & Functionality | H | 1hr | 1hrs | 1hrs |
+| Keep Track of Players Score |  H | 1hr | 2hrs | 2hrs |
+| Reflect Players Score | H | 1hr | 1hrs | 1hrs |
+| Keep track of Highest Score | H | 1hr | 1hrs | 1hrs |
 | Reflect Highest Score | H | 1hr | 0hrs | 0hrs |
 | Compare and Update Highest Score | H | 1hr | 0hrs | 0hrs |
-| Highest Score Button creation |  H | 1hr | 0hrs | 0hrs |
+| Highest Score Button creation |  H | 1hr | .5hrs | .5hrs |
 | Total | H | 39hrs| 1.5hrs | 1.5hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+const getData = async () => {
+  try {
+    const data = await axios.get(DOMAIN);
+    let dataInfo = data.data.results;
+    console.log(dataInfo);
+    displayQuestion(dataInfo);
+    displayAnswers(dataInfo);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+getData();
+
+
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
 `
+Had so much trouble trying to get random questions to continue to generate without expiring the current game session.
