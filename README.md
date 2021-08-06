@@ -7,7 +7,8 @@
 Toon Time!
 "The worlds most whackiest cartoon trivia game!"
 
-The name of your project with deployed URL.
+https://courtneyajackson.github.io/Toon-Time-Trivia-Game/
+
 
 ## Project Description
 
