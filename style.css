@@ -1,13 +1,16 @@
   body {
   /* font-family: 'Courier New', Courier, monospace; */
+  min-height: 100vh;
   margin: 0px;
   font-size: 40px;
   font-family: sans-serif;
-  @media (max-width:770px) and (min-width:480px) {
+  flex-direction: column;
+  @media screen and (max-width:1025px) {
+    
     font-size: 20px;
     display: inline-block;
  }  
-
+ /* and (min-width:480px)  */
   
 }
 
@@ -38,6 +41,8 @@
 }
 
 #toon-time-header {
+  display: flex;
+  flex-grow: 1;
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
@@ -113,7 +118,12 @@
   border: solid 6px yellow;
 }
 
-
+.footer{
+  box-sizing: border-box;
+  padding: 50px; 
+  font-size: 20px; 
+  text-align: center;
+}
 
 html, body {
   width: 100%;
@@ -143,7 +153,8 @@ body {
 EDIT ON */
 .rainbow-letters {
   display: flex;
-  font-size: 40px;
+  
+  font-size: 30px;
   font-family: sans-serif;
   text-transform: uppercase;
   justify-items: center;
