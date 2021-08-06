@@ -1,6 +1,5 @@
 # Toon-Time
 
-# Project Overview
 
 ## Project Name
 
@@ -15,8 +14,6 @@ The name of your project with deployed URL.
 Toon Time is a cartoon enthuists dream! It tests your cartoon knowledge over the corse of 10 multiple choice questions. Each question you get correct, you earn a point! Can you beat the highest score to date?
 
 ## API and Data Sample
-
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
 
 Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&type=multiple&encode=url3986
@@ -44,9 +41,7 @@ Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&ty
 
 
 
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
-
+#### MVP
 - Creating functional new game button 
 - Implement function trivia questions questions that link to the correct answer
 - Incrementing the players score with every correct answer 
@@ -58,8 +53,7 @@ Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&ty
 - Reset every time new game button is clicked
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
+- Create functional high score log
 - Add user sign up functionality 
 - let users have the ablitlity to create a simple profile to keep track of their gaming history and communicate with other players
 - make it a two player game 
@@ -67,17 +61,13 @@ Api URL : https://opentdb.com/api.php?amount=10&category=32&difficulty=medium&ty
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 3| Pseudocode / actual code | Incomplete
-|August 4| Initial Clickable Model  | Incomplete
-|August 5| MVP | Incomplete
+|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete
+|August 3| Pseudocode / actual code | Complete
+|August 4| Initial Clickable Model  | Complete
+|August 5| MVP | Complete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
@@ -86,10 +76,6 @@ https://whimsical.com/priority-matrix-trivia-game-P9LU55eNcG3dcBfB1BkJDm
 
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -111,7 +97,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Reflect Highest Score | H | 1hr | 0hrs | 0hrs |
 | Compare and Update Highest Score | H | 1hr | 0hrs | 0hrs |
 | Highest Score Button creation |  H | 1hr | .5hrs | .5hrs |
-| Total | H | 39hrs| 1.5hrs | 1.5hrs |
+| Total | H | 39hrs| 43hrs | 43hrs |
 
 ## Code Snippet
 
@@ -132,6 +118,6 @@ getData();
 
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
-`
 Had so much trouble trying to get random questions to continue to generate without expiring the current game session.
+
+Had to change my approach of how to generate correct answer randomly instead of hard coding the same correct answer for each question. 
